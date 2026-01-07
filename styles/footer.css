@@ -5,6 +5,19 @@ footer{
     font: 14px/150% var(--font-family);
 }
 
-footer span:nth-child(1){
+footer div{
     margin-right: auto;
+}
+
+@media (width <= 79em) {
+    footer{
+        flex-wrap: wrap;
+    }
+    footer > div{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+        justify-content: center;
+    }
 }
